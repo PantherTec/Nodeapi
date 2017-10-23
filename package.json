@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "tobis 5th try at understanding node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "webpack -w",
+    "dev": "cross-env NODE_ENV=development nodemon dist/index.bundle.js"
+  },
+  "author": "Tobiloba",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cross-env": "5.0.0",
+    "express": "4.15.3",
+    "express-validation": "1.0.2",
+    "helmet": "3.6.0",
+    "joi": "10.5.0",
+    "mongoose": "4.9.9",
+    "mongoose-unique-validator": "1.0.5",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-equimper": "^2.2.1",
+    "morgan": "^1.9.0",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
